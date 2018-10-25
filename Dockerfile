@@ -30,6 +30,8 @@ ENV LAPACK=/usr/lib/liblapack.so
 ENV ATLAS=/usr/lib/libatlas.so
 ENV BLAS=/usr/lib/libblas.so
 
+# RUN pip3 uninstall numpy scipy
 RUN pip3 install numpy scipy
+RUN python3 -c 'import numpy; numpy.show_config()'
 
 ENTRYPOINT []
