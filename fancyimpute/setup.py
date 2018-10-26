@@ -57,7 +57,6 @@ if __name__ == '__main__':
             'numpy>=1.10',
             'scipy',
             # used by NuclearNormMinimization
-            'cvxpy>=1.0.6',
             'scikit-learn>=0.19.1',
             # used by MatrixFactorization
             'keras>=2.0.0',
